@@ -63,6 +63,7 @@ static const char *termcmd[]       = { "kitty", NULL };
 static const char *open_browser[]  = { "chromium", NULL };
 static const char *open_pcmanfm[]  = { "pcmanfm", NULL };
 static const char *poweroff[]      = { "poweroff", NULL};
+static const char *reboot[]        = { "reboot", NULL};
 static const char *lockscreen[]    = { "xlock", NULL};
 static const char *rofi_run[]      = { "rofi","-show", "run", NULL};
 
@@ -81,6 +82,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_6,      spawn,          {.v = open_browser } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ControlMask|ShiftMask, XK_End,    spawn,          {.v = poweroff} },
+	{ MODKEY|ControlMask|ShiftMask, XK_Home,   spawn,          {.v = reboot} },
 	{ MODKEY|ControlMask|ShiftMask, XK_l,      spawn,          {.v = lockscreen} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },

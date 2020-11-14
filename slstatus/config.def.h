@@ -69,5 +69,5 @@ static const struct arg args[] = {
     { run_command,  "[  %s ]",              "amixer sget Master | grep 'Mono:' | awk -F'[][]' '{ print $2 }'" },
     { disk_perc,    "[  %s% ]",                                                                           "/" },
     { ram_perc,     "[  %s% ]",                                                                          NULL },
-	{ datetime,     "[ %s ]",                                                                "%d-%m-%y %H:%M" },
+	{ datetime,     "[ %s ]",                                                                "%d/%m/%y %H:%M" },
 };
